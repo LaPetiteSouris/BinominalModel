@@ -1,8 +1,10 @@
 //
 // Created by tung on 11/6/17.
 //
-
+#include <stdlib.h>
+#include "cmath"
 #include "../include/BinomialModel.h"
+using namespace std;
 
 BinominalModel::BinominalModel(double s0, double u, double d, double r, double x) {
     S0 = s0;
@@ -24,7 +26,7 @@ int BinominalModel::isArbitrage() {
 }
 
 double BinominalModel::calculateP() {
-    return (R - D) / (U - D);
+    return (exp(R) + D) / (U + D);
 
 }
 
