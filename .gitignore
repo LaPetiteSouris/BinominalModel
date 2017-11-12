@@ -14,12 +14,13 @@ cmake-build-debug
 # Build stuff
 # Prerequisites
 *.d
-
+bin/
 # Compiled Object files
 *.slo
 *.lo
 *.o
 *.obj
+*.cbp
 
 # Precompiled Headers
 *.gch

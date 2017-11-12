@@ -21,6 +21,7 @@ find_package(Threads REQUIRED)
 set(PThreadLib -pthread)
 ################
 # Define a test
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "../bin")
 set(MAIN_SOURCE_FILES ../main/include/BinomialModel.h ../main/include/EuropeanModel.h ../main/src/BinomialModel.cpp ../main/src/EuropeanModel.cpp)
 add_executable(maintest test_call_option.cpp ${MAIN_SOURCE_FILES})
 
