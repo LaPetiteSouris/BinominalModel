@@ -42,6 +42,6 @@ double BinominalModel::combination(double n, double k) {
     return r;
 }
 
-double BinominalModel::getStockPriceAtNode(double n) {
+double BinominalModel::getCallOptionPrice(double n) {
     return 0;
 }

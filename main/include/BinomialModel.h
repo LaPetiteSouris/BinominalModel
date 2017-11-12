@@ -23,7 +23,7 @@ public:
 
     double combination(double n, double k);
 
-    virtual double getStockPriceAtNode(double n);
+    virtual double getCallOptionPrice(double n);
 };
 
 #endif //BINOMIALPRICER_BINOMIALMODEL_H

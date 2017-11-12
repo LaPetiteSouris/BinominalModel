@@ -11,7 +11,7 @@ class EuropeanModel : public BinominalModel {
 public:
     EuropeanModel(double S0, double U, double D, double R, double X);
 
-    double getStockPriceAtNode(double n);
+    double getCallOptionPrice(double n);
 };
 
 #endif //BINOMIALPRICER_EUROPEANMODEL_H

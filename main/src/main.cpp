@@ -31,7 +31,7 @@ int main() {
         cout << "Arbitrage exists ..." << endl;
         return 1;
     }
-    double price = european_pricer->getStockPriceAtNode(n);
+    double price = european_pricer->getCallOptionPrice(n);
     cout << "Call option price is: " << price << endl;
 
 

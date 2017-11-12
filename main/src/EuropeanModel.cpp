@@ -8,7 +8,7 @@ using namespace std;
 
 EuropeanModel::EuropeanModel(double S0, double U, double D, double R, double X) : BinominalModel(S0, U, D, R, X) {}
 
-double EuropeanModel::getStockPriceAtNode(double n) {
+double EuropeanModel::getCallOptionPrice(double n) {
     double Rn = pow(exp(R), n);
     double P = calculateP();
     double Csum = 0.0;
