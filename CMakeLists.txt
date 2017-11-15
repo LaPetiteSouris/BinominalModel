@@ -3,5 +3,5 @@ project(BinomialPricer)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_subdirectory (main)
+add_subdirectory (binomial)
 add_subdirectory (test)
