@@ -7,11 +7,11 @@
 
 using namespace std;
 double myfunct(double x){
-    return x-4.0;
+    return pow(x,3)-x-2.0;
 }
 int main() {
 
-    double root = SolvebyBisection(myfunct, 2, 4, 0.1, 100);
+    double root = SolvebyBisection(myfunct, 1, 2, 0.000001, 100000);
     cout << root;
     return 0;
 }

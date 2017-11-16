@@ -26,7 +26,8 @@ double SolvebyBisection(double (*func)(double x),
             n += 1;
             // New interval
             if ((func(c)*func(a)) > 0) {
-                a=c;
+                a = c;
+            } else {
                 b=c;
             }
 
